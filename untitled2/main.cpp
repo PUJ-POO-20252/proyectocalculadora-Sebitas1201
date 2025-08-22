@@ -2,12 +2,20 @@
 #include "matematicas.h"
 
 int main() {
-    int x = 10;
-    int y = 4;
-    int resultadoDivision = dividir(x,y);
-    int resultadoResta = restar(x,y);
+    int x, y;
 
-    std::cout <<"division: " << resultadoDivision << std::endl;
-    std::cout <<"resta: " << resultadoResta << std::endl;
+    std::cout << "Ingrese el primer numero: ";
+    std::cin >> x;
+
+    std::cout << "Ingrese el segundo numero: ";
+    std::cin >> y;
+
+    int resultadoDivision = dividir(x, y);
+    int resultadoResta = restar(x, y);
+
+    std::cout << "Division: " << resultadoDivision << std::endl;
+    std::cout << "Resta: " << resultadoResta << std::endl;
+
     return 0;
 }
+
